@@ -2,6 +2,7 @@ package com.company;
 
 public class HomeCat extends Cat implements Playable {
     Master master;
+
     public void layOnSofa(){
         System.out.println("LAAAAAAAY!!");
     }
