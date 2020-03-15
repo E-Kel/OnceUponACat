@@ -7,9 +7,12 @@ public class HowDartWaderBecomeNice {
         Master DartWader = new Master("Dart Wader", 100, 1);
 
         WildCat Progue = new WildCat();
+
         HomeCat R2D2 = new HomeCat();
         HomeCat BB8 = new HomeCat();
+
         Narrator narrator = new Narrator();
+
         narrator.intro();
         narrator.LukeAndYoda();
         narrator.DartWaderAndPalpatin();
