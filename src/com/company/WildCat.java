@@ -12,5 +12,5 @@ public class WildCat extends Cat implements Playable {
     @Override
     public void play() {
         System.out.println("To play with pigeon");
-    }//comment
+    }
 }
