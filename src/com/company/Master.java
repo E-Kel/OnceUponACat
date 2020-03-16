@@ -8,6 +8,13 @@ public class Master {
 
 
 
+    String name;
+    int amountOfMoney;
+    int mood;
+    String spoilShoesPhrase;
+    String outOfMoneyPhrase;
+
+
     public Master(String name, int amountOfMoney, int mood, String spoilShoesPhrase, String outOfMoneyPhrase)
     {
         this.name = name;
@@ -16,12 +23,10 @@ public class Master {
         this.spoilShoesPhrase = spoilShoesPhrase;
         this.outOfMoneyPhrase = outOfMoneyPhrase;
     }
+    public String getName() {
+        return name;
+    }
 
-    String name;
-    int amountOfMoney;
-    int mood;
-    String spoilShoesPhrase;
-    String outOfMoneyPhrase;
 
     public void getMood(){
         String moodStr;
