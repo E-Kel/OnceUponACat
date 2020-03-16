@@ -33,7 +33,12 @@ public class Narrator {
     }
 
     public void DartWaderAndPalpatin() {
-
+        Master palpatin = new Master(
+                "Sheev Palpatine",
+                30,
+                5,
+                "Oh, I feel my force is melting...",
+                "I Have Died Before. I'll be baaaaack!!! (Died)");
 
 
     }
