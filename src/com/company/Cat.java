@@ -3,9 +3,10 @@ package com.company;
 abstract public class Cat {
     String breed;
     String name;
-    int breedIndex;
-    public Cat(){
 
+    public Cat(String breed, String name) {
+        this.breed = breed;
+        this.name = name;
     }
 
 

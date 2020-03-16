@@ -7,12 +7,22 @@ public class Master {
     static int amountOfMoneyMin = 0;
 
 
-    public Master(String name, int amountOfMoney, int mood)
+
+    public Master(String name, int amountOfMoney, int mood, String spoilShoesPhrase, String outOfMoneyPhrase)
     {
         this.name = name;
         this.amountOfMoney = amountOfMoney;
         this.mood = mood;
+        this.spoilShoesPhrase = spoilShoesPhrase;
+        this.outOfMoneyPhrase = outOfMoneyPhrase;
     }
+
+    String name;
+    int amountOfMoney;
+    int mood;
+    String spoilShoesPhrase;
+    String outOfMoneyPhrase;
+
     public void getMood(){
         String moodStr;
         if (mood < 4){
@@ -22,16 +32,32 @@ public class Master {
             System.out.println("I'm happy! And I'm feeling great\n");
         }
     }
-    String name;
-    int amountOfMoney;
-    int mood;
-    public void decreaseAmountOfMoney(){
-        amountOfMoney-=10;
+
+
+    public void increaseMood(){
+        mood+=2;
+        if (mood >=moodMax){
+            mood = 10;
+        }
+        getMood();
+    }
+    public void decreaseMood()
+    {
+        mood-=2;
+        if (mood <=moodMin){
+            mood =moodMin;
+            System.out.println("I'm Happy with that!");
+        }
+        getMood();
     }
 
-    public void check_money(){
+    public void decreaseAmountOfMoney(){
+        amountOfMoney-=10;
         if (amountOfMoney<=0){
-            System.out.println("Oh, no! I'm bunkrupt! Now I'm gonna turn to ashes... ");
+            System.out.println(outOfMoneyPhrase);
         }
+
     }
+
+
 }

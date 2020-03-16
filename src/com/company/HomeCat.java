@@ -2,18 +2,32 @@ package com.company;
 
 public class HomeCat extends Cat implements Playable {
     Master master;
+    String playPhrase;
+    String spoilShoesPhrase;
+    String layOnSofaPhrase;
 
-    public void layOnSofa(){
-        System.out.println("LAAAAAAAY!!");
+    public HomeCat(String breed, String name, Master master, String playPhrase, String spoilShoesPhrase, String layOnSofaPhrase) {
+        super(breed, name);
+        this.master = master;
+        this.playPhrase = playPhrase;
+        this.spoilShoesPhrase = spoilShoesPhrase;
+        this.layOnSofaPhrase = layOnSofaPhrase;
     }
-    public void spoilShoes(){
-        System.out.println("Damn! It will costs me 10$, freaking cat!!!");
+
+
+    public void layOnSofa() {
+        master.increaseMood();
+        System.out.println(layOnSofaPhrase);
+    }
+
+    public void spoilShoes() {
         master.decreaseAmountOfMoney();
+        System.out.println(spoilShoesPhrase);
     }
 
     @Override
     public void play() {
-        System.out.println("To play with unknown crappy thing!");
-        master.mood+=1;
+        master.mood += 1;
+        System.out.println(playPhrase);
     }
 }

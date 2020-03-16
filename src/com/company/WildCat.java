@@ -1,16 +1,28 @@
 package com.company;
 
 public class WildCat extends Cat implements Playable {
-    public void hatePeople(){
-        System.out.println("hate");
+    String hatePhrase;
+    String saveTheWorldPhrase;
+    String playPhrase;
+
+    public WildCat(String breed, String name, String hatePhrase, String playPhrase, String saveTheWorldPhrase) {
+        super(breed, name);
+        this.hatePhrase = hatePhrase;
+        this.playPhrase = playPhrase;
+        this.saveTheWorldPhrase = saveTheWorldPhrase;
+    }
+
+    public void hatePeople() {
+        System.out.println(hatePhrase);
 
     }
-    public void saveWorld(){
-        System.out.println("save");
+
+    public void saveWorld() {
+        System.out.println(saveTheWorldPhrase);
     }
 
     @Override
     public void play() {
-        System.out.println("To play with pigeon");
+        System.out.println(playPhrase);
     }
 }
