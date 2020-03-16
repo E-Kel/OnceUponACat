@@ -1,13 +1,13 @@
-# Default ignored files
-/.idea
-/out
-/*.log
 # Compiled class file
 *.class
 
+/target/
+.idea/
+/out/
 # Log file
 *.log
 
+*.iml
 # BlueJ files
 *.ctxt
 
