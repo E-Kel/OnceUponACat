@@ -12,7 +12,6 @@ public class Master {
         this.name = name;
         this.amountOfMoney = amountOfMoney;
         this.mood = mood;
-        System.out.println(String.format("Hey! I'm %S! ", this.name));
     }
     public void getMood(){
         String moodStr;
@@ -28,5 +27,11 @@ public class Master {
     int mood;
     public void decreaseAmountOfMoney(){
         amountOfMoney-=10;
+    }
+
+    public void check_money(){
+        if (amountOfMoney<=0){
+            System.out.println("Oh, no! I'm bunkrupt! Now I'm gonna turn to ashes... ");
+        }
     }
 }
