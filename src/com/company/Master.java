@@ -15,17 +15,17 @@ public class Master {
         this.name = name;
         this.amountOfMoney = amountOfMoney;
         this.mood = mood;
-        this.spoilShoesPhrase = spoilShoesPhrase;
+        this.spoilShoesPhrase =  spoilShoesPhrase;
         this.outOfMoneyPhrase = outOfMoneyPhrase;
     }
 
     public void getMood(){
         String moodStr;
         if (mood < 4){
-            System.out.println("I'm so Angry!");
+            System.out.println(name + ": "+"I'm so Angry!");
         }
         else if (mood >= 7){
-            System.out.println("I'm happy! And I'm feeling great\n");
+            System.out.println(name + ": "+"I'm so happy! And I'm feeling great\n");
         }
     }
 
@@ -35,22 +35,14 @@ public class Master {
         if (mood >=moodMax){
             mood = 10;
         }
-        //getMood();
+        getMood();
     }
-    public void decreaseMood()
-    {
-        mood-=2;
-        if (mood <=moodMin){
-            mood =moodMin;
-            System.out.println("I'm Happy with that!");
-        }
-        //getMood();
-    }
+
 
     public void decreaseAmountOfMoney(){
         amountOfMoney-=10;
         if (amountOfMoney<=0){
-            System.out.println(outOfMoneyPhrase);
+            System.out.println(name + ": "+ outOfMoneyPhrase);
         }
 
     }

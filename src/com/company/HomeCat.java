@@ -21,13 +21,14 @@ public class HomeCat extends Cat implements Playable {
     }
 
     public void spoilShoes() {
-        master.decreaseAmountOfMoney();
         System.out.println(stringReplyFormat(name)+spoilShoesPhrase);
+        System.out.println(master.name + ": "+master.spoilShoesPhrase);
+        master.decreaseAmountOfMoney();
     }
 
     @Override
     public void play() {
-        master.increaseMood();
         System.out.println(name+": "+playPhrase);
+        master.increaseMood();
     }
 }

@@ -35,19 +35,14 @@ public class Narrator {
                 "stolen plans that can save\n" +
                 "her people and restore\n" +
                 "freedom to the galaxy....." +
-                "\n\n" +
-                "\n There was a good wild cat named Luke Skywalker that lived on the planet Tatuin." +
-                "\n He was on by itself, but sometimes he dreamed about travel among the stars." +
-                "\n One peaceful day The Dart Wader - sith cat has come by Imperial Warship to Tatuin" +
-                "\n to find lost schemas of Starkiller - the powerful Imperial's weapon, " +
-                "\n but after he hasn't found them he had been destroyed the Luke's homeland village" +
-                "... ");
+                "\n\n");
 
     }
 
     public void DartWaderAndPalpatin(Master palpatin, HomeCat DW) {
         System.out.println("\n===Chapter 1===\n(Emperor's flagship)\n");
         DW.layOnSofa();
+        DW.play();
         tellphrase(palpatin, "Come to me, my little kitty, I have a mission for you.");
         DW.spoilShoes();
         tellphrase(palpatin, "Stop it! I want to tell you something. Come here!");
@@ -80,7 +75,6 @@ public class Narrator {
                 "#STUDYwasHARD \n " +
                 "Luke was tha last Jedi that have been trained by Master Yoda\n" +
                 "At the end of study course Green Master call Luke and said: ");
-        System.out.println("Yoda: ");
         while (true) {
             yoda.decreaseAmountOfMoney();
             if (yoda.amountOfMoney<=0)
@@ -100,9 +94,10 @@ public class Narrator {
         tellphrase(DW, "Luke, I'm your father!");
         tellphrase(luke, "NOOOOOO, It's Impossible!!!");
         tellphrase(DW, "I have a plan to kill Palpatin, then we will rule the galaxy.");
-        tellphrase(luke,"Ok, but how are you gonna do th...");
+        tellphrase(luke,"Ok, but how are you gonna do tha...");
         DW.spoilShoes();
-     tellphrase("The End!");
+        DW.spoilShoes();
+        tellphrase("The End!");
 
     }
 
