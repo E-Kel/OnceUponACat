@@ -41,15 +41,15 @@ public class Narrator {
 
     }
 
-    public void DartWaderAndPalpatin(Master palpatin, HomeCat DW) {
+    public void DartWaderAndPalpatine(Master palpatine, HomeCat DW) {
         System.out.println("\n===Chapter 1===\n(Emperor's flagship)\n");
         DW.layOnSofa();
         DW.play();
-        tellphrase(palpatin, "Come to me, my little kitty, I have a mission for you.");
+        tellphrase(palpatine, "Come to me, my little kitty, I have a mission for you.");
         DW.spoilShoes();
-        tellphrase(palpatin, "Stop it! I want to tell you something. Come here!");
-        tellphrase(DW, "{Comming up to Palpatin}");
-        tellphrase(palpatin, "So, I need you to find plans of DEATH STAR at the Rebel Planet.\n " +
+        tellphrase(palpatine, "Stop it! I want to tell you something. Come here!");
+        tellphrase(DW, "{Comming up to Palpatine}");
+        tellphrase(palpatine, "So, I need you to find plans of DEATH STAR at the Rebel Planet.\n " +
                 " Our spy have sent the message that they are hidden at the Tatuin. \n " +
                 "I want you to destroy a Rebel base and bring back the plans. \n " +
                 "If you succeed, I'll teach you how to create thunders.\n " +
@@ -86,10 +86,10 @@ public class Narrator {
         tellphrase("Then he got the assignment to a secret mission...");
     }
 
-    public void DartWaderMeetLukeAndKillPalpatin(WildCat luke, HomeCat DW) {
+    public void DartWaderMeetLukeAndKillPalpatine(WildCat luke, HomeCat DW) {
         System.out.println("\n===Chapter 3===\n(Somewhere in the space)\n\n ");
         tellphrase("Darth Wader hasn't gone to Tatuin.\n " +
-                "He new that Luke, his son is living there, so he tricked Palpatin,\n " +
+                "He knew that Luke, his son is living there, so he tricked Palatine,\n " +
                 "destroy half of Imperial fleet and continue to spoiling shoes of his Master\n ");
         while (DW.master.amountOfMoney > 20)
             DW.spoilShoes();
@@ -97,7 +97,7 @@ public class Narrator {
         tellphrase("Luke was captured during the mission. After a while he had been brought to Darth Wader");
         tellphrase(DW, "Luke, I'm your father!");
         tellphrase(luke, "NOOOOOO, It's Impossible!!!");
-        tellphrase(DW, "I have a plan to kill Palpatin, then we will rule the galaxy.");
+        tellphrase(DW, "I have a plan to kill Palpatine, then we will rule the galaxy.");
         tellphrase(luke, "Ok, but how are you gonna do tha...");
         DW.spoilShoes();
         DW.spoilShoes();

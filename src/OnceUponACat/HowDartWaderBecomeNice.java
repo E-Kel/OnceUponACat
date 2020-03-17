@@ -4,7 +4,7 @@ public class HowDartWaderBecomeNice {
 
     public static void main(String[] args) {
 
-        Master palpatin = new Master(
+        Master palpatine = new Master(
                 "Sheev Palpatine",
                 60,
                 5,
@@ -28,7 +28,7 @@ public class HowDartWaderBecomeNice {
         HomeCat darthWader = new HomeCat(
                 "SithCat",
                 "Darth Wader",
-                palpatin,
+                palpatine,
                 "xoo-khhh it's time to play!",
                 "{Spoiling the Master's lightsaber with force}",
                 "{is sitting on his little sith throne and xooooo-khhhhhhhh}");
@@ -37,9 +37,9 @@ public class HowDartWaderBecomeNice {
 
 
         narrator.intro();
-        narrator.DartWaderAndPalpatin(palpatin, darthWader);
+        narrator.DartWaderAndPalpatine(palpatine, darthWader);
         narrator.LukeAndYoda(yoda, luke);
-        narrator.DartWaderMeetLukeAndKillPalpatin(luke, darthWader);
+        narrator.DartWaderMeetLukeAndKillPalpatine(luke, darthWader);
 
     }
 }
