@@ -94,7 +94,7 @@ public class Narrator {
         while (DW.master.amountOfMoney > 20)
             DW.spoilShoes();
         System.out.println("\n=3 years later= \n");
-        tellphrase("Luke was captured during the mission. After a while he had been brought to Darth Wader");
+        tellphrase("Luke was captured during the mission. After a while, he had been brought to Darth Wader");
         tellphrase(DW, "Luke, I'm your father!");
         tellphrase(luke, "NOOOOOO, It's Impossible!!!");
         tellphrase(DW, "I have a plan to kill Palpatine, then we will rule the galaxy.");
