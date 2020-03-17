@@ -4,7 +4,8 @@ public class Master {
     static int moodMax = 10;
     static int moodMin = 0;
     static int amountOfMoneyMax = 100;
-    static int amountOfMoneyMin = 0;
+    static int amountOfMoneyMin = 0; //todo const
+
 
 
 

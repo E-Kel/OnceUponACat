@@ -2,20 +2,12 @@ package com.company;
 
 public class Narrator {
 
-    Master palpatin = new Master("Sheev Palpatine", 30, 5, "Oh, I feel my force is melting...", "I Have Died Before. I'll be baaaaack!!! (Died)");
-    Master yoda = new Master("Yoda", 20, 5, "", "Do or Do not! There is no try! You have a sist...hhh(Died) ");
-
-    WildCat luke = new WildCat("JediCat", "Luke Skywalker", "hate", "play", "save");
-    WildCat porg = new WildCat("Porg de Jaku", "Porg", "hate", "play", "save");
-
-    HomeCat darthWader = new HomeCat("SithCat", "Darth Wader", palpatin,"play", "spoil", "layonsofa");
-    HomeCat snoke = new HomeCat("SithCat", "Supreme Leader Snoke", palpatin,"play", "spoil", "layonsofa");
 
     public void tellphrase(Master who, String phrase){
-        System.out.println(who.getName()+phrase);
+        System.out.println(who.getName()+": "+phrase);
     }
     public void tellphrase(Cat who, String phrase){
-        System.out.println(who.getName()+phrase);
+        System.out.println(who.getName()+": "+phrase);
     }
     public void tellphrase(String phrase){
         System.out.println("Narrator: "+phrase);
@@ -52,19 +44,21 @@ public class Narrator {
 
     }
 
-    public void DartWaderAndPalpatin() {
-        darthWader.spoilShoes();
-        snoke.play();
-        snoke.layOnSofa();
+    public void DartWaderAndPalpatin(Master palpatin, HomeCat DW) {
+        DW.spoilShoes();
+        DW.play();
+        DW.layOnSofa();
 
     }
 
-    public void LukeAndYoda() {
+    public void LukeAndYoda(Master yoda, WildCat luke) {
+
+
     }
-    public void LukeAndDartWader() {
+    public void LukeAndDartWader(WildCat luke, HomeCat DW) {
     }
 
-    public void DartWaderDestroyPalpatin() {
+    public void DartWaderDestroyPalpatin(Master palpatin, HomeCat darthWader, WildCat luke) {
 
     }
 

@@ -17,17 +17,17 @@ public class HomeCat extends Cat implements Playable {
 
     public void layOnSofa() {
         master.increaseMood();
-        System.out.println(layOnSofaPhrase);
+        System.out.println(name+": "+layOnSofaPhrase);
     }
 
     public void spoilShoes() {
         master.decreaseAmountOfMoney();
-        System.out.println(spoilShoesPhrase);
+        System.out.println(stringReplyFormat(name)+spoilShoesPhrase);
     }
 
     @Override
     public void play() {
         master.mood += 1;
-        System.out.println(playPhrase);
+        System.out.println(name+": "+playPhrase);
     }
 }
