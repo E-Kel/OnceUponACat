@@ -1,13 +1,7 @@
 package com.company;
 
+import static com.company.Const.*;
 public class Master {
-    static int moodMax = 10;
-    static int moodMin = 0;
-    static int amountOfMoneyMax = 100;
-    static int amountOfMoneyMin = 0; //todo const
-
-
-
 
     String name;
     int amountOfMoney;
@@ -24,10 +18,6 @@ public class Master {
         this.spoilShoesPhrase = spoilShoesPhrase;
         this.outOfMoneyPhrase = outOfMoneyPhrase;
     }
-    public String getName() {
-        return name;
-    }
-
 
     public void getMood(){
         String moodStr;
@@ -45,7 +35,7 @@ public class Master {
         if (mood >=moodMax){
             mood = 10;
         }
-        getMood();
+        //getMood();
     }
     public void decreaseMood()
     {
@@ -54,7 +44,7 @@ public class Master {
             mood =moodMin;
             System.out.println("I'm Happy with that!");
         }
-        getMood();
+        //getMood();
     }
 
     public void decreaseAmountOfMoney(){

@@ -27,7 +27,7 @@ public class HomeCat extends Cat implements Playable {
 
     @Override
     public void play() {
-        master.mood += 1;
+        master.increaseMood();
         System.out.println(name+": "+playPhrase);
     }
 }
