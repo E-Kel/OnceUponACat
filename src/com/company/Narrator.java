@@ -67,14 +67,42 @@ public class Narrator {
         luke.hatePeople();
         tellphrase(luke, "Who is there? ");
         tellphrase("There was Master Yoda, legendary Jedi Master ");
-
-
-
+        tellphrase(yoda, "Hello, my young padawan!\n " +
+                "That force is flowing in you I feel. Yrssss.... \n " +
+                "With me come to Alderaan. Hrshhhh...\n " +
+                "I can teach you, and maybe a Jedi you'll become and fight with sith you will!\n " +
+                "Or even you can learn testing and java and become an Automation QA Engineer and save the world!\n " +
+                "What your answer will be? Yrsss..");
+        luke.saveWorld();
+        tellphrase(yoda, "Good young padawan! ");
+        tellphrase("{Both set out to Alderaan}\n" +
+                "=3 years later= \n" +
+                "#STUDYwasHARD \n " +
+                "Luke was tha last Jedi that have been trained by Master Yoda\n" +
+                "At the end of study course Green Master call Luke and said: ");
+        System.out.println("Yoda: ");
+        while (true) {
+            yoda.decreaseAmountOfMoney();
+            if (yoda.amountOfMoney<=0)
+                break;
+        }
+        tellphrase("Then he got the assignment to secret mission...");
     }
-    public void LukeAndDartWader(WildCat luke, HomeCat DW) {
-    }
-
-    public void DartWaderDestroyPalpatin(Master palpatin, HomeCat darthWader, WildCat luke) {
+    public void DartWaderMeetLukeAndKillPalpatin(WildCat luke, HomeCat DW) {
+        System.out.println("\n===Chapter 3===\n(Somewhere in the space)\n\n ");
+        tellphrase("Darth Wader haven't went to Tatuin.\n " +
+                "He new that Luke, his son is living there, so he tricked Palpatin,\n " +
+                "destroy half of Imperial fleet and continue to spoiling shoes of his Master\n ");
+        while (DW.master.amountOfMoney>20)
+            DW.spoilShoes();
+        System.out.println("\n=3 years later= \n");
+        tellphrase("Luke was captured during the mission. After a while he had been brought to Darth Wader");
+        tellphrase(DW, "Luke, I'm your father!");
+        tellphrase(luke, "NOOOOOO, It's Impossible!!!");
+        tellphrase(DW, "I have a plan to kill Palpatin, then we will rule the galaxy.");
+        tellphrase(luke,"Ok, but how are you gonna do th...");
+        DW.spoilShoes();
+     tellphrase("The End!");
 
     }
 
