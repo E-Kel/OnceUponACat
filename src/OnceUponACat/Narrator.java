@@ -1,20 +1,22 @@
-package com.company;
+package OnceUponACat;
 
 public class Narrator {
 
 
-    public void tellphrase(Master who, String phrase){
-        System.out.println(who.name+": "+phrase);
+    public void tellphrase(Master who, String phrase) {
+        System.out.println(who.name + ": " + phrase);
     }
-    public void tellphrase(Cat who, String phrase){
-        System.out.println(who.getName()+": "+phrase);
+
+    public void tellphrase(Cat who, String phrase) {
+        System.out.println(who.getName() + ": " + phrase);
     }
-    public void tellphrase(String phrase){
-        System.out.println("Narrator: "+phrase);
+
+    public void tellphrase(String phrase) {
+        System.out.println("Narrator: " + phrase);
     }
 
     public void intro() {
-        tellphrase("A long time ago in a galaxy far, far away... " +
+        tellphrase("A long time ago in a galaxy far, far away... \n" +
                 "Rebel spaceships, striking\n" +
                 "from a hidden base, have won\n" +
                 "their first victory against\n" +
@@ -47,9 +49,10 @@ public class Narrator {
         DW.spoilShoes();
         tellphrase(palpatin, "Stop it! I want to tell you something. Come here!");
         tellphrase(DW, "{Comming up to Palpatin}");
-        tellphrase(palpatin, "So, I need you to find plans of DEATH STAR at the Rebel Planet.\n" +
-                " Our spy send the message that they are hidden at the Tatuin. \n" +
-                "I want you to destroy a Rebel base and bring back the plans. \n If you succeed, I'll teach you how to create thunders.\n " +
+        tellphrase(palpatin, "So, I need you to find plans of DEATH STAR at the Rebel Planet.\n " +
+                " Our spy send the message that they are hidden at the Tatuin. \n " +
+                "I want you to destroy a Rebel base and bring back the plans. \n " +
+                "If you succeed, I'll teach you how to create thunders.\n " +
                 "If not ... You will regret about that! Understood? ");
         tellphrase(DW, "Meow! {xooooo-khhhhhhhh}");
 
@@ -77,29 +80,28 @@ public class Narrator {
                 "At the end of study course Green Master call Luke and said: ");
         while (true) {
             yoda.decreaseAmountOfMoney();
-            if (yoda.amountOfMoney<=0)
+            if (yoda.amountOfMoney <= 0)
                 break;
         }
         tellphrase("Then he got the assignment to secret mission...");
     }
+
     public void DartWaderMeetLukeAndKillPalpatin(WildCat luke, HomeCat DW) {
         System.out.println("\n===Chapter 3===\n(Somewhere in the space)\n\n ");
         tellphrase("Darth Wader haven't went to Tatuin.\n " +
                 "He new that Luke, his son is living there, so he tricked Palpatin,\n " +
                 "destroy half of Imperial fleet and continue to spoiling shoes of his Master\n ");
-        while (DW.master.amountOfMoney>20)
+        while (DW.master.amountOfMoney > 20)
             DW.spoilShoes();
         System.out.println("\n=3 years later= \n");
         tellphrase("Luke was captured during the mission. After a while he had been brought to Darth Wader");
         tellphrase(DW, "Luke, I'm your father!");
         tellphrase(luke, "NOOOOOO, It's Impossible!!!");
         tellphrase(DW, "I have a plan to kill Palpatin, then we will rule the galaxy.");
-        tellphrase(luke,"Ok, but how are you gonna do tha...");
+        tellphrase(luke, "Ok, but how are you gonna do tha...");
         DW.spoilShoes();
         DW.spoilShoes();
         tellphrase("The End!");
 
     }
-
-
 }

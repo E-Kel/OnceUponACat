@@ -1,4 +1,4 @@
-package com.company;
+package OnceUponACat;
 
 public class HowDartWaderBecomeNice {
 
@@ -39,7 +39,7 @@ public class HowDartWaderBecomeNice {
         narrator.intro();
         narrator.DartWaderAndPalpatin(palpatin, darthWader);
         narrator.LukeAndYoda(yoda, luke);
-        narrator.DartWaderMeetLukeAndKillPalpatin(luke,darthWader);
+        narrator.DartWaderMeetLukeAndKillPalpatin(luke, darthWader);
 
     }
 }

@@ -1,4 +1,4 @@
-package com.company;
+package OnceUponACat;
 
 abstract public class Cat {
     String breed;
@@ -13,8 +13,9 @@ abstract public class Cat {
         this.breed = breed;
         this.name = name;
     }
-    public String stringReplyFormat(String str){
-        str = "["+str+"]: ";
+
+    public String stringReplyFormat(String str) {
+        str = "[" + str + "]: ";
         return str;
     }
 

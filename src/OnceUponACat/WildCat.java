@@ -1,4 +1,4 @@
-package com.company;
+package OnceUponACat;
 
 public class WildCat extends Cat implements Playable {
     String hatePhrase;
@@ -13,16 +13,16 @@ public class WildCat extends Cat implements Playable {
     }
 
     public void hatePeople() {
-        System.out.println(name+": "+hatePhrase);
+        System.out.println(name + ": " + hatePhrase);
 
     }
 
     public void saveWorld() {
-        System.out.println(name+": "+saveTheWorldPhrase);
+        System.out.println(name + ": " + saveTheWorldPhrase);
     }
 
     @Override
     public void play() {
-        System.out.println(name+": "+playPhrase);
+        System.out.println(name + ": " + playPhrase);
     }
 }

@@ -1,4 +1,4 @@
-package com.company;
+package OnceUponACat;
 
 public class HomeCat extends Cat implements Playable {
     Master master;
@@ -17,18 +17,18 @@ public class HomeCat extends Cat implements Playable {
 
     public void layOnSofa() {
         master.increaseMood();
-        System.out.println(name+": "+layOnSofaPhrase);
+        System.out.println(name + ": " + layOnSofaPhrase);
     }
 
     public void spoilShoes() {
-        System.out.println(stringReplyFormat(name)+spoilShoesPhrase);
-        System.out.println(master.name + ": "+master.spoilShoesPhrase);
+        System.out.println(stringReplyFormat(name) + spoilShoesPhrase);
+        System.out.println(master.name + ": " + master.spoilShoesPhrase);
         master.decreaseAmountOfMoney();
     }
 
     @Override
     public void play() {
-        System.out.println(name+": "+playPhrase);
+        System.out.println(name + ": " + playPhrase);
         master.increaseMood();
     }
 }
