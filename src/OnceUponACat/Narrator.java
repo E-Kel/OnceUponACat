@@ -50,7 +50,7 @@ public class Narrator {
         tellphrase(palpatin, "Stop it! I want to tell you something. Come here!");
         tellphrase(DW, "{Comming up to Palpatin}");
         tellphrase(palpatin, "So, I need you to find plans of DEATH STAR at the Rebel Planet.\n " +
-                " Our spy send the message that they are hidden at the Tatuin. \n " +
+                " Our spy have sent the message that they are hidden at the Tatuin. \n " +
                 "I want you to destroy a Rebel base and bring back the plans. \n " +
                 "If you succeed, I'll teach you how to create thunders.\n " +
                 "If not ... You will regret about that! Understood? ");
@@ -61,7 +61,7 @@ public class Narrator {
     public void LukeAndYoda(Master yoda, WildCat luke) {
         System.out.println("\n===Chapter 2===\n(Tatuin)\n");
         tellphrase("\n There was a good wild cat named Luke Skywalker that lived on the planet Tatuin." +
-                "\n\nThere was usual morning in the Luke's village. But suddenly, he have heard that somebody in the yard. ");
+                "\n\nThere was a usual morning in Luke's village. But suddenly, he have heard that somebody in the yard. ");
         luke.hatePeople();
         tellphrase(luke, "Who is there? ");
         tellphrase("There was Master Yoda, legendary Jedi Master ");
@@ -76,19 +76,19 @@ public class Narrator {
         tellphrase("{Both set out to Alderaan}\n" +
                 "=3 years later= \n" +
                 "#STUDYwasHARD \n " +
-                "Luke was tha last Jedi that have been trained by Master Yoda\n" +
-                "At the end of study course Green Master call Luke and said: ");
+                "Luke was the last Jedi that has been trained by Master Yoda\n" +
+                "When his training came to an end Green Master call Luke and said: ");
         while (true) {
             yoda.decreaseAmountOfMoney();
             if (yoda.amountOfMoney <= 0)
                 break;
         }
-        tellphrase("Then he got the assignment to secret mission...");
+        tellphrase("Then he got the assignment to a secret mission...");
     }
 
     public void DartWaderMeetLukeAndKillPalpatin(WildCat luke, HomeCat DW) {
         System.out.println("\n===Chapter 3===\n(Somewhere in the space)\n\n ");
-        tellphrase("Darth Wader haven't went to Tatuin.\n " +
+        tellphrase("Darth Wader hasn't gone to Tatuin.\n " +
                 "He new that Luke, his son is living there, so he tricked Palpatin,\n " +
                 "destroy half of Imperial fleet and continue to spoiling shoes of his Master\n ");
         while (DW.master.amountOfMoney > 20)
