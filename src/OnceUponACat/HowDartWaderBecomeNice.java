@@ -29,7 +29,7 @@ public class HowDartWaderBecomeNice {
                 "SithCat",
                 "Darth Wader",
                 palpatin,
-                "xoo-khhhh it's time to play!",
+                "xoo-khhh it's time to play!",
                 "{Spoiling the Master's lightsaber with force}",
                 "{is sitting on his little sith throne and xooooo-khhhhhhhh}");
 
