@@ -1,4 +1,9 @@
-package OnceUponACat;
+package onceUponACat.main;
+
+import onceUponACat.cat.HomeCat;
+import onceUponACat.cat.Master;
+import onceUponACat.narrator.Narrator;
+import onceUponACat.cat.WildCat;
 
 public class HowDartWaderBecomeNice {
 

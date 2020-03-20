@@ -1,10 +1,15 @@
-package OnceUponACat;
+package onceUponACat.narrator;
+
+import onceUponACat.cat.Cat;
+import onceUponACat.cat.HomeCat;
+import onceUponACat.cat.Master;
+import onceUponACat.cat.WildCat;
 
 public class Narrator {
 
 
     public void tellphrase(Master who, String phrase) {
-        System.out.println(who.name + ": " + phrase);
+        System.out.println(who.getName() + ": " + phrase);
     }
 
     public void tellphrase(Cat who, String phrase) {
@@ -78,12 +83,10 @@ public class Narrator {
                 "#STUDYwasHARD \n " +
                 "Luke was the last Jedi that has been trained by Master Yoda\n" +
                 "When his training came to an end Green Master call Luke and said: ");
-        while (true) {
+        while (yoda.getAmountOfMoney()>0) {
             yoda.decreaseAmountOfMoney();
-            if (yoda.amountOfMoney <= 0)
-                break;
         }
-        tellphrase("Then he got the assignment to a secret mission...");
+        tellphrase("Then Luke has got the assignment to a secret mission...");
     }
 
     public void DartWaderMeetLukeAndKillPalpatine(WildCat luke, HomeCat DW) {
@@ -91,7 +94,7 @@ public class Narrator {
         tellphrase("Darth Wader hasn't gone to Tatuin.\n " +
                 "He knew that Luke, his son is living there, so he tricked Palatine,\n " +
                 "destroy half of Imperial fleet and continue to spoiling shoes of his Master\n ");
-        while (DW.master.amountOfMoney > 20)
+        while (DW.getMaster().getAmountOfMoney() > 20)
             DW.spoilShoes();
         System.out.println("\n=3 years later= \n");
         tellphrase("Luke was captured during the mission. After a while, he had been brought to Darth Wader");
