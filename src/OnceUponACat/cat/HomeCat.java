@@ -1,5 +1,7 @@
 package onceUponACat.cat;
 
+import onceUponACat.master.Master;
+
 public class HomeCat extends Cat implements Playable {
 
     private Master master;

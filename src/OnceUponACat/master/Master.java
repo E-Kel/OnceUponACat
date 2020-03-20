@@ -1,6 +1,6 @@
-package onceUponACat.cat;
+package onceUponACat.master;
 
-import static onceUponACat.cat.Const.MOOD_MAX;
+import static onceUponACat.master.Const.MOOD_MAX;
 
 public class Master {
 

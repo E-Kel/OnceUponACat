@@ -2,7 +2,7 @@ package onceUponACat.narrator;
 
 import onceUponACat.cat.Cat;
 import onceUponACat.cat.HomeCat;
-import onceUponACat.cat.Master;
+import onceUponACat.master.Master;
 import onceUponACat.cat.WildCat;
 
 public class Narrator {
