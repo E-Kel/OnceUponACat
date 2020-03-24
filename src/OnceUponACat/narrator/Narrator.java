@@ -7,7 +7,6 @@ import onceUponACat.cat.WildCat;
 
 public class Narrator {
 
-
     public void tellphrase(Master who, String phrase) {
         System.out.println(who.getName() + ": " + phrase);
     }
@@ -100,7 +99,7 @@ public class Narrator {
         tellphrase("Luke was captured during the mission. After a while, he had been brought to Darth Wader");
         tellphrase(DW, "Luke, I'm your father!");
         tellphrase(luke, "NOOOOOO, It's Impossible!!!");
-        tellphrase(DW, "I have a plan to kill Palpatine, then we will rule the galaxy.");
+        tellphrase(DW, "So, first of all, I'll kill Palpatine, then we will rule the galaxy.");
         tellphrase(luke, "Ok, but how are you gonna do tha...");
         DW.spoilShoes();
         DW.spoilShoes();

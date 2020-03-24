@@ -11,10 +11,10 @@ public class HomeCat extends Cat implements Playable {
 
     public HomeCat(String breed, String name, Master master, String playPhrase, String spoilShoesPhrase, String layOnSofaPhrase) {
         super(breed, name);
-        setLayOnSofaPhrase(layOnSofaPhrase);
-        setSpoilShoesPhrase(spoilShoesPhrase);
-        setMaster(master);
-        setPlayPhrase(playPhrase);
+        this.master = master;
+        this.playPhrase = playPhrase;
+        this.spoilShoesPhrase =spoilShoesPhrase;
+        this.layOnSofaPhrase = layOnSofaPhrase;
     }
 
 
@@ -33,32 +33,16 @@ public class HomeCat extends Cat implements Playable {
         return master;
     }
 
-    public void setMaster(Master master) {
-        this.master = master;
-    }
-
     public String getPlayPhrase() {
         return playPhrase;
-    }
-
-    public void setPlayPhrase(String playPhrase) {
-        this.playPhrase = playPhrase;
     }
 
     public String getSpoilShoesPhrase() {
         return spoilShoesPhrase;
     }
 
-    public void setSpoilShoesPhrase(String spoilShoesPhrase) {
-        this.spoilShoesPhrase = spoilShoesPhrase;
-    }
-
     public String getLayOnSofaPhrase() {
         return layOnSofaPhrase;
-    }
-
-    public void setLayOnSofaPhrase(String layOnSofaPhrase) {
-        this.layOnSofaPhrase = layOnSofaPhrase;
     }
 
     @Override

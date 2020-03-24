@@ -11,11 +11,11 @@ public class Master {
     private String outOfMoneyPhrase;
 
     public Master(String name, int amountOfMoney, int mood, String spoilShoesPhrase, String outOfMoneyPhrase) {
-        setAmountOfMoney(amountOfMoney);
-        setSpoilShoesPhrase(spoilShoesPhrase);
-        setMood(mood);
-        setName(name);
-        setOutOfMoneyPhrase(outOfMoneyPhrase);
+        this.name = name;
+        this.amountOfMoney = amountOfMoney;
+        this.mood = mood;
+        this.spoilShoesPhrase = spoilShoesPhrase;
+        this.outOfMoneyPhrase = outOfMoneyPhrase;
     }
 
     public void getMood() {

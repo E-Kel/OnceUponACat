@@ -7,9 +7,9 @@ public class WildCat extends Cat implements Playable {
 
     public WildCat(String breed, String name, String hatePhrase, String playPhrase, String saveTheWorldPhrase) {
         super(breed, name);
-        setHatePhrase(hatePhrase);
-        setPlayPhrase(playPhrase);
-        setSaveTheWorldPhrase(saveTheWorldPhrase);
+        this.hatePhrase = hatePhrase;
+        this.playPhrase =playPhrase;
+        this.saveTheWorldPhrase = saveTheWorldPhrase;
     }
 
     public void hatePeople() {
